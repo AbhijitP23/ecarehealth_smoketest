@@ -1,0 +1,31 @@
+{
+  "name": "playwright-reporters-demo",
+  "version": "1.0.0",
+  "description": "This is a test automation framework designed using Playwright to demonstrate different reporter",
+  "main": "index.js",
+  "scripts": {
+  "clean": "rimraf allure-results/ && rimraf allure-report/ && rimraf playwright-report/ && rimraf monocart-results/",
+  "test": "playwright test",
+  "allure-reporter": "npm run clean && playwright test --config=playwright.allure.config.js"
+  },
+  "keywords": [
+  "node",
+  "javascript",
+  "allure-report",
+  "rimraf",
+  "lambdatest",
+  "allure-reporting",
+  "playwright-tests",
+  "lambdatest-playwright"
+  ],
+  "author": "Code with MMAK",
+  "license": "ISC",
+  "devDependencies": {
+  "@playwright/test": "^1.30.0",
+  "allure-commandline": "^2.20.1",
+  "allure-playwright": "^2.0.0-beta.24",
+  "monocart-reporter": "^1.1.4",
+  "playwright": "^1.30.0",
+  "rimraf": "^4.1.1"
+  }
+  }
